@@ -1,4 +1,4 @@
-Bootstrap-Popover-Extra-Placements
+bootstrap-popover-extra-placements
 ==================================
 
 Extends the bootstrap popover and to add extra placements.
