@@ -21,17 +21,33 @@ Once you have added the 'extra-placements' plug-in, instantiate a popover just a
 now use on of the additional placement options.
 
 ```html
-  <html>
-    <head>
-      <title>Example</title>
-      <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
-    </head>
-    <body>
-      <button class="btn" rel="popover" title="Test Title" data-content="Here is an example popover" data-placement="bottomLeft">click me to see popover</div>
+<html>
+  <head>
+    <title>Example</title>
+    <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
 
-      <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js">
-      <script type="text/javascript" src="/js/plugins/popover-extra-placements.js">
-    </body>
-  </html>
+    <script type="text/javascript" src="/js/libs/jquery/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/plugins/popover-extra-placements.js"></script>
+
+    <style type="text/css">
+      button.btn {
+        margin: 20px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <button class="btn" rel="popover" title="Test Title" data-content="Here is an example popover" data-placement="bottom">out of window</button>
+    <br>
+    <button class="btn" rel="popover" title="Test Title" data-content="Here is an example popover" data-placement="bottomLeft">in window</button>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('button[rel="popover"]').popover();
+      });
+    </script>
+  </body>
+</html>
 ```
 
