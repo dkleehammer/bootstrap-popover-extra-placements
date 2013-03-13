@@ -9,7 +9,7 @@ Preface
 
 Twitter's Bootstrap built-in popover plug-in is great, however, there are times when your
 popover is rending outside of the viewport.  'extra-placements' extends the built-in plug-in
-and provides 8 additional placement options giving you a total of 12 placement options.
+and provides 4 additional placement options giving you a total of 8 placement options.
 
 ### Usage
 Using the plug-in is simple.  Download either the un-minified or the minified of both the js
