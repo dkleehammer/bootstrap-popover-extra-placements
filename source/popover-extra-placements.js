@@ -122,9 +122,9 @@
   $.fn.popover = $.extend(function (option) {
     return this.each(function () {
       var $this = $(this)
-        , data = $this.data('popover')
+        , data = $this.data('bs.popover')
         , options = typeof option == 'object' && option;
-      if (!data) $this.data('popover', (data = new Popover(this, options)));
+      if (!data) $this.data('bs.popover', (data = new Popover(this, options)));
       if (typeof option == 'string') data[option]();
     });
   }, _super);
