@@ -29,7 +29,7 @@
 
 .popover.topLeft .arrow {
     bottom: -11px;
-    left: 25%;
+    left: 20%;
     margin-left: -11px;
     border-top-color: #999999;
     border-top-color: rgba(0, 0, 0, 0.25);
@@ -51,7 +51,7 @@
 
 .popover.topRight .arrow {
     bottom: -11px;
-    left: 75%;
+    left: 80%;
     margin-left: -11px;
     border-top-color: #999999;
     border-top-color: rgba(0, 0, 0, 0.25);
@@ -76,7 +76,7 @@
 }
 
 .popover.rightTop .arrow {
-    top: 25%;
+    top: 20%;
     left: -11px;
     margin-top: -11px;
     border-right-color: #999999;
@@ -98,7 +98,7 @@
 }
 
 .popover.rightBottom .arrow {
-    top: 75%;
+    top: 80%;
     left: -11px;
     margin-top: -11px;
     border-right-color: #999999;
@@ -125,7 +125,7 @@
 
 .popover.bottomLeft .arrow {
     top: -11px;
-    left: 25%;
+    left: 20%;
     margin-left: -11px;
     border-bottom-color: #999999;
     border-bottom-color: rgba(0, 0, 0, 0.25);
@@ -147,7 +147,7 @@
 
 .popover.bottomRight .arrow {
     top: -11px;
-    left: 75%;
+    left: 80%;
     margin-left: -11px;
     border-bottom-color: #999999;
     border-bottom-color: rgba(0, 0, 0, 0.25);
@@ -172,7 +172,7 @@
 }
 
 .popover.leftTop .arrow {
-    top: 25%;
+    top: 20%;
     right: -11px;
     margin-top: -11px;
     border-left-color: #999999;
@@ -195,7 +195,7 @@
 }
 
 .popover.leftBottom .arrow {
-    top: 75%;
+    top: 80%;
     right: -11px;
     margin-top: -11px;
     border-left-color: #999999;
