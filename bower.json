@@ -1,0 +1,29 @@
+{
+  "name": "bootstrap-popover-extra-placements",
+  "version": "0.1.1",
+  "homepage": "https://github.com/tarlepp/bootstrap-popover-extra-placements",
+  "authors": [
+    "Daniel Kleehammer",
+    "Tarmo Leppänen"
+  ],
+  "description": "Extends the bootstrap popover and to add extra placements. Original repository: https://github.com/dkleehammer/bootstrap-popover-extra-placements",
+  "main": [
+      "source/popover-extra-placements.js",
+      "source/popover-extra-placements.css"
+  ],
+  "keywords": [
+    "bootstrap",
+    "popover"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap" : ">=3.0.0"
+  }
+}

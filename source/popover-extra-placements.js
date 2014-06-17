@@ -79,34 +79,34 @@
 
           // extend placements (top)
           case 'topLeft':
-            tp = {top: pos.top - actualHeight,  left: pos.left + pos.width / 2 - (actualWidth * .25)};
+            tp = {top: pos.top - actualHeight,  left: pos.left + pos.width / 2 - (actualWidth * .20)};
             break;
           case 'topRight':
-            tp = {top: pos.top - actualHeight, left: pos.left + pos.width / 2 - (actualWidth * .75)};
+            tp = {top: pos.top - actualHeight, left: pos.left + pos.width / 2 - (actualWidth * .80)};
             break;
 
           // extend placements (right)
           case 'rightTop':
-            tp = {top: pos.top + pos.height / 2 - (actualHeight *.25), left: pos.left + pos.width};
+            tp = {top: pos.top + pos.height / 2 - (actualHeight *.20), left: pos.left + pos.width};
             break;
           case 'rightBottom':
-            tp = {top: pos.top + pos.height / 2 - (actualHeight * .75), left: pos.left + pos.width};
+            tp = {top: pos.top + pos.height / 2 - (actualHeight * .80), left: pos.left + pos.width};
             break;
 
           // extend placements (bottom)
           case 'bottomLeft':
-            tp = {top: pos.top + pos.height, left: pos.left + pos.width / 2 - (actualWidth * .25)};
+            tp = {top: pos.top + pos.height, left: pos.left + pos.width / 2 - (actualWidth * .20)};
             break;
           case 'bottomRight':
-            tp = {top: pos.top + pos.height, left: pos.left + pos.width / 2 - (actualWidth * .75)};
+            tp = {top: pos.top + pos.height, left: pos.left + pos.width / 2 - (actualWidth * .80)};
             break;
 
           // extend placements (left)
           case 'leftTop':
-            tp = {top: pos.top + pos.height / 2 - (actualHeight *.25), left: pos.left - actualWidth};
+            tp = {top: pos.top + pos.height / 2 - (actualHeight *.20), left: pos.left - actualWidth};
             break;
           case 'leftBottom':
-            tp = {top: pos.top + pos.height / 2 - (actualHeight * .75), left: pos.left - actualWidth};
+            tp = {top: pos.top + pos.height / 2 - (actualHeight * .80), left: pos.left - actualWidth};
             break;
 
         }
@@ -122,9 +122,9 @@
   $.fn.popover = $.extend(function (option) {
     return this.each(function () {
       var $this = $(this)
-        , data = $this.data('popover')
+        , data = $this.data('bs.popover')
         , options = typeof option == 'object' && option;
-      if (!data) $this.data('popover', (data = new Popover(this, options)));
+      if (!data) $this.data('bs.popover', (data = new Popover(this, options)));
       if (typeof option == 'string') data[option]();
     });
   }, _super);
