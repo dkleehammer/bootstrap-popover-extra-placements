@@ -1,3 +1,5 @@
+NOTE: this repo is no longer supported, I would be happy to hand it off to anyone that would like to support it, let me know.
+
 bootstrap-popover-extra-placements
 ==================================
 
