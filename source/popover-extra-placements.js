@@ -37,9 +37,10 @@
       _super.Constructor.prototype[args.shift()].apply(this, args);
     },
     show: function() {
-      var $tip, inside, pos, actualWidth, actualHeight, placement, tp;
+      var $tip, inside, pos, actualWidth, actualHeight, placement, tp, e = $.Event('show');
       
       if (this.hasContent && this.enabled) {
+        this.$element.trigger(e);
         $tip = this.tip();
         this.setContent();
       
@@ -115,6 +116,8 @@
           .css(tp)
           .addClass(placement)
           .addClass('in');
+
+        this.$element.trigger('shown');
       }
     }
   });
